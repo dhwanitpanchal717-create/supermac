@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hydroline Injection Molding Machines | Supermac Machinery</title>
+  <meta name="description" content="Interactive digital brochure for Supermac Hydroline direct clamping servo driven injection molding machines from 80 to 650 ton." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Hydroline home">
+      <span class="brand-mark">S</span>
+      <span>
+        <strong>Supermac</strong>
+        <em>HYDROLINE</em>
+      </span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+
+    <nav class="nav" id="nav">
+      <a href="#overview">Overview</a>
+      <a href="#machine">Machine</a>
+      <a href="#experience">Experience</a>
+      <a href="#models">Models</a>
+      <a href="#specifications">Specifications</a>
+      <a href="#features">Features</a>
+      <a href="#applications">Applications</a>
+      <a href="#brochure">Brochure</a>
+    </nav>
+
+    <a class="download-mini" href="assets/hydroline-brochure.pdf" download>Download Brochure</a>
+  </header>
+
+  <main>
+    <section id="home" class="hero section-pad">
+      <div class="hero-bg-orb orb-one"></div>
+      <div class="hero-bg-orb orb-two"></div>
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Direct Clamping Injection Molding Machine</p>
+          <h1>HYDRO<span>LINE</span></h1>
+          <h2>Injection Molding Machines</h2>
+          <p class="hero-text">
+            Explore Supermac Hydroline machines with an interactive 3D-style machine showcase,
+            model-wise specifications, standard features, applications, and brochure download.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#models">Explore Models</a>
+            <a class="btn ghost" href="#specifications">View Specifications</a>
+            <a class="btn orange" href="assets/hydroline-brochure.pdf" download>Download Brochure</a>
+          </div>
+
+          <div class="hero-stats">
+            <article><strong>80–650</strong><span>Ton Range</span></article>
+            <article><strong>10</strong><span>Models</span></article>
+            <article><strong>3D Style</strong><span>Tilt / Parallax</span></article>
+          </div>
+        </div>
+
+        <div class="machine-stage reveal delay-1" id="machineTilt">
+          <div class="stage-rings"></div>
+          <div class="blueprint-overlay" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="pellet-stream" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="machine-glow"></div>
+          <img src="assets/machine-hero.jpg" alt="Hydroline injection molding machine" class="machine-img" />
+          <div class="inspection-lens" id="inspectionLens" aria-hidden="true"></div>
+          <div class="machine-shadow"></div>
+
+          <span class="float-label label-a">Servo Motor</span>
+          <span class="float-label label-b">Injection Unit</span>
+          <span class="float-label label-c">Generous Mold Space</span>
+          <span class="float-label label-d">X-Mold 9 Control</span>
+          <span class="float-label label-e">PID Temperature</span>
+
+          <div class="viewer-hint" id="viewerHint">Scroll to zoom · Drag when zoomed · Double click reset</div>
+
+          <div class="creative-controls" aria-label="Creative machine view controls">
+            <button type="button" id="blueprintToggle" data-experience-toggle="blueprint">Blueprint Scan</button>
+            <button type="button" id="lensToggle" data-experience-toggle="lens">Inspection Lens</button>
+            <button type="button" id="pulseToggle" data-experience-toggle="pulse">Spec Pulse</button>
+          </div>
+
+          <div class="machine-console" aria-hidden="true">
+            <span>MODE: DIGITAL BROCHURE</span>
+            <strong id="consoleModel">SMH 125 · 125 TON</strong>
+            <em>IMAGE-BASED 3D STYLE</em>
+          </div>
+
+          <div class="zoom-controls" aria-label="3D-style image zoom controls">
+            <button type="button" id="zoomOut" aria-label="Zoom out">−</button>
+            <input id="zoomRange" type="range" min="1" max="1.8" step="0.05" value="1" aria-label="Zoom level" />
+            <button type="button" id="zoomIn" aria-label="Zoom in">+</button>
+            <button type="button" id="zoomReset" class="reset-zoom">Reset</button>
+            <span class="zoom-readout" id="zoomReadout">100%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview" class="section-pad">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Overview</p>
+          <h2>Premium interactive digital brochure</h2>
+          <p>A clean product website for browsing Hydroline models, specs, machine highlights, features, and applications.</p>
+        </div>
+        <div class="overview-grid" id="overviewGrid"></div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience section-pad">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Creative Touch</p>
+          <h2>Machine command deck</h2>
+          <p>A unique interactive layer: blueprint scan, inspection lens, spec pulse, and a tonnage orbit that connects every SMH model visually.</p>
+        </div>
+
+        <div class="deck-grid reveal" id="experienceDeck"></div>
+
+        <div class="tonnage-lab reveal">
+          <div class="tonnage-orbit" id="tonnageOrbit" aria-label="Interactive SMH model orbit"></div>
+          <div class="model-dashboard" id="modelDashboard"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="machine" class="machine-section section-pad">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Machine</p>
+          <h2>Interactive machine feature highlights</h2>
+          <p>Click any numbered point to view the feature details. This is image-based 3D-style interaction, not a real CAD/GLB model.</p>
+        </div>
+
+        <div class="feature-layout reveal">
+          <div class="feature-image-wrap">
+            <img src="assets/machine-hero.jpg" alt="Hydroline machine feature callouts" class="feature-img" />
+            <div id="calloutLayer"></div>
+          </div>
+
+          <aside class="feature-panel" id="featurePanel"></aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="models" class="section-pad">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Models</p>
+          <h2>Hydroline model explorer</h2>
+          <p>Select a model to jump into its clamp unit and general data specifications.</p>
+        </div>
+        <div class="model-grid" id="modelGrid"></div>
+      </div>
+    </section>
+
+    <section id="specifications" class="spec-section section-pad">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Specifications</p>
+          <h2 id="specTitle">SMH 125 technical specifications</h2>
+          <p>Model-wise data is organized into clamp unit, general data, and quick machine summary.</p>
+        </div>
+
+        <div class="model-tabs" id="modelTabs"></div>
+        <div class="spec-grid" id="specGrid"></div>
+      </div>
+    </section>
+
+    <section class="compare-section section-pad">
+      <div class="container">
+        <div class="section-head dark reveal">
+          <p class="eyebrow">Compare</p>
+          <h2>Compare models side-by-side</h2>
+          <p>Choose up to three models. Differences are highlighted automatically.</p>
+        </div>
+        <div class="compare-controls" id="compareControls"></div>
+        <div class="table-wrap reveal">
+          <table class="compare-table" id="compareTable"></table>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section-pad">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Features</p>
+          <h2>Standard features</h2>
+          <p>Brochure-based feature groups with collapsible lists for easy reading.</p>
+        </div>
+        <div class="standard-grid" id="standardFeatures"></div>
+      </div>
+    </section>
+
+    <section id="applications" class="applications section-pad">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Applications</p>
+          <h2>Application areas</h2>
+          <p>Common molded plastic product categories shown in the Hydroline brochure.</p>
+        </div>
+        <div class="application-grid" id="applicationGrid"></div>
+      </div>
+    </section>
+
+    <section id="brochure" class="section-pad">
+      <div class="container">
+        <div class="brochure-card reveal">
+          <div>
+            <p class="eyebrow">Digital Brochure</p>
+            <h2>Hydroline Digital Brochure</h2>
+            <p>View or download the complete Hydroline brochure with model-wise specifications, features, applications, and machine details.</p>
+          </div>
+          <div class="brochure-actions">
+            <a class="btn light" href="assets/hydroline-brochure.pdf" target="_blank" rel="noreferrer">View PDF</a>
+            <a class="btn orange" href="assets/hydroline-brochure.pdf" download>Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Supermac Machinery</strong>
+        <p>HYDROLINE Injection Molding Machines · Direct Clamping Servo Driven Machines · 80–650 Ton</p>
+      </div>
+      <div class="footer-links">
+        <a href="#overview">Overview</a>
+        <a href="#models">Models</a>
+        <a href="#experience">Experience</a>
+        <a href="#features">Features</a>
+        <a href="#brochure">Brochure</a>
+      </div>
+    </div>
+    <div class="container creator-credit">
+      <span>Created by</span>
+      <strong>Dhwanit Panchal</strong>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
