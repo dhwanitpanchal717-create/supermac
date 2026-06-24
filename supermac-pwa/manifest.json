@@ -1,0 +1,15 @@
+{
+  "name": "Supermac",
+  "short_name": "Supermac",
+  "description": "Supermac plastic injection moulding machine catalogue and inquiry PWA.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d2f66",
+  "orientation": "portrait-primary",
+  "icons": [
+    {"src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}

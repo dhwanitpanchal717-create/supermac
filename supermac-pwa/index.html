@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supermac | Injection Moulding Machines</title>
+  <meta name="description" content="Supermac Machinery manufactures and services plastic injection moulding machines, including Hydroline 80 to 650 ton machines." />
+  <meta name="theme-color" content="#0d2f66" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Supermac Home"><img src="assets/logo.png" alt="Supermac logo" /></a>
+    <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+    <nav id="nav">
+      <a href="#machines">Machines</a>
+      <a href="#brochure">Brochure</a>
+      <a href="#inquiry">Inquiry</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="heroText">
+        <span class="tag">Direct Clamping Injection Moulding Machine</span>
+        <h1>Built for strong, stable plastic production.</h1>
+        <p>Hydroline 80–650 ton machines for manufacturing, service and sales support.</p>
+        <div class="actions">
+          <a class="btn primary" href="#machines">View Catalogue</a>
+          <a class="btn" href="assets/brochure.pdf" download>Download Brochure</a>
+        </div>
+      </div>
+      <div class="heroMachine"><img src="assets/machine-hero.jpg" alt="Supermac injection moulding machine" /></div>
+    </section>
+
+    <section class="quickContact" aria-label="Quick contact">
+      <a href="https://wa.me/919998040433?text=Hello%20Supermac%2C%20I%20want%20inquiry%20about%20injection%20moulding%20machine." target="_blank" rel="noopener">WhatsApp</a>
+      <a href="tel:+919998040432">Call</a>
+      <a href="mailto:info@supermac.in">Email</a>
+    </section>
+
+    <section id="machines" class="section">
+      <div class="sectionTitle">
+        <span>Catalogue</span>
+        <h2>Hydroline Machine Range</h2>
+      </div>
+      <div class="machineGrid" id="machineGrid"></div>
+    </section>
+
+    <section id="machineDetails" class="section details hidden">
+      <button class="close" id="closeDetails">×</button>
+      <h2 id="detailName"></h2>
+      <p id="detailDesc"></p>
+      <div class="specs" id="detailSpecs"></div>
+      <a class="btn primary" href="#inquiry">Send Inquiry for this Machine</a>
+    </section>
+
+    <section id="brochure" class="section split">
+      <div>
+        <span class="tag dark">PDF Brochure</span>
+        <h2>Download Hydroline Brochure</h2>
+        <p>Keep the full machine catalogue, specifications and standard features offline on your phone.</p>
+      </div>
+      <a class="btn primary" href="assets/brochure.pdf" download>Download PDF</a>
+    </section>
+
+    <section id="inquiry" class="section inquiry">
+      <div class="sectionTitle">
+        <span>Inquiry</span>
+        <h2>Send Machine Requirement</h2>
+      </div>
+      <form id="inquiryForm">
+        <input id="name" placeholder="Your name" required />
+        <input id="phone" placeholder="Phone number" required />
+        <select id="machineSelect" required>
+          <option value="">Select machine</option>
+        </select>
+        <textarea id="message" placeholder="Your requirement / material / tonnage / timeline"></textarea>
+        <button class="btn primary" type="submit">Send on WhatsApp</button>
+      </form>
+    </section>
+
+    <section id="about" class="section about">
+      <img src="assets/logo.png" alt="Supermac logo" />
+      <h2>About Supermac Machinery</h2>
+      <p>Supermac Machinery works in plastic injection moulding machine manufacturing, service and sales. The focus is simple: reliable machines, practical support and long-term customer relationships.</p>
+    </section>
+
+    <section id="offlineBox" class="offline hidden">
+      <h2>You are offline</h2>
+      <p>This PWA can still open cached pages, logo, machine image and brochure.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Supermac Machinery · Ahmedabad, Gujarat</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
