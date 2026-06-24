@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Supermac HYDROLINE Catalogue</title>
+  <meta name="description" content="Supermac HYDROLINE injection moulding machine catalogue: models, specs, features, applications and brochure." />
+  <meta name="theme-color" content="#0b5fa8" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="status-spacer"></div>
+  <main id="app" class="app-shell"></main>
+
+  <div id="installBanner" class="install-banner hidden">
+    <div>
+      <strong>Install Supermac App</strong>
+      <span>Open faster from your home screen.</span>
+    </div>
+    <button id="installAppBtn" type="button">Install</button>
+    <button id="closeInstallBanner" class="close-install" type="button" aria-label="Close install banner">×</button>
+  </div>
+
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <button data-route="home" class="nav-item active"><span>⌂</span><small>Home</small></button>
+    <button data-route="models" class="nav-item"><span>⚙</span><small>Models</small></button>
+    <button data-route="features" class="nav-item"><span>🔧</span><small>Features</small></button>
+    <button data-route="applications" class="nav-item"><span>▲●■</span><small>Application</small></button>
+    <button data-route="more" class="nav-item"><span>•••</span><small>More</small></button>
+  </nav>
+
+  <div id="zoomModal" class="zoom-modal hidden">
+    <button class="close-zoom">×</button>
+    <img id="zoomImg" alt="Zoomed drawing" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
